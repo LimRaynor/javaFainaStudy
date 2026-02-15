@@ -18,7 +18,7 @@ public class TypeCasting_형변환 {
 		double dd = 8.0;
 
 		// 형변환(type casting)
-		ff = (float)dd; // double큰값을 float작은값안에 넣을땐 자동형변환
+		ff = (float)dd; // [수정] double큰값을 float작은값안에 넣을땐 강제형변환 (캐스팅 필요)
 		dd = ff; // float작은값을 double큰값안에 넣을땐 자동형변환
 
 	}

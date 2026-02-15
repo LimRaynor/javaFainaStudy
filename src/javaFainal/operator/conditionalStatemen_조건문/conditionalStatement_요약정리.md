@@ -58,11 +58,11 @@ String str = String.valueOf(100);   // int -> String
 
 ```java
 Random random = new Random();
-int ran = random.nextInt(4) + 5;   // 5 ~ 8 범위의 난수
+int ran = random.nextInt(5) + 5;   // 5 ~ 9 범위의 난수
 ```
 
 > **공식** : `random.nextInt(범위) + 시작값`
-> - `nextInt(4)` -> 0~3 생성, `+5` -> 5~8
+> - `nextInt(5)` -> 0~4 생성, `+5` -> 5~9
 
 ---
 

@@ -73,19 +73,21 @@ public static int add(int x, int y) {
 public static int add(int x, int y, int z) {
     return x + y + z;
 }
-
-// 가변 인자 (0개 이상의 매개변수)
-public static int add(int... numbers) {
-    int sum = 0;
-    for (int i = 0; i < numbers.length; i++) {
-        sum = sum + numbers[i];
-    }
-    return sum;
-}
 ```
 
 ### 가변 인자 (`...`)
 
 - `int... numbers` : 0개 이상의 int를 받을 수 있음
 - 내부적으로 **배열(`[]`)** 형태로 처리됨
-- 원하는 개수만큼 인자를 넘길 수 있어 유연함
+- 가변인자 메서드는 기존 오버로드와 **시그니처가 충돌**할 수 있으므로 메서드명을 분리하는 것이 좋음
+
+```java
+// 가변 인자 메서드 (이름을 분리하여 충돌 방지)
+public static int addAll(int... numbers) {
+    int sum = 0;
+    for (int i = 0; i < numbers.length; i++) {
+        sum = sum + numbers[i];   // 인덱스(i)가 아닌 실제 값(numbers[i])을 더해야 함
+    }
+    return sum;
+}
+```
