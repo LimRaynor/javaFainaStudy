@@ -1,4 +1,4 @@
-package javaFainal;
+package javaFainal.Array;
 
 import java.util.ArrayList;
 

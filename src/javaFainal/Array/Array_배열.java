@@ -1,4 +1,4 @@
-package javaFainal;
+package javaFainal.Array;
 
 public class Array_배열 {
 	public static void main(String[] args) {

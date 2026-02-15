@@ -1,4 +1,4 @@
-package javaFainal;
+package javaFainal.Array;
 
 public class NullPointerException_빈칸참조 {
 	public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package javaFainal;
+package javaFainal.Array;
 
 public class ArrayInitialization_배열초기화 {
 	public static void main(String[] args) {
